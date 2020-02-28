@@ -1,0 +1,775 @@
+@font-face {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html, body, div, ul, li, p, a, h1,form,input {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+div.container {
+    max-width: 100%;
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+div.container>div.logo {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+div.container>div.navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index:3;
+    background-color: #fff;
+}
+
+div.container>div.navbar>div.nav-menu>ul>a {
+    color: #000;
+    font-family: 'Cinzel';
+    font-size: 12px;
+}
+
+div.container>div.navbar>div.nav-menu>ul>a>li {
+    float: left;
+    padding: 15px;
+}
+
+div.container>div.navbar>div.nav-menu>ul>a>li.active {
+    color: #e056fd;
+    font-weight: 500;
+}
+
+div.container>div.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+div.container>div.welcome>div.w-img {
+    height: 650px;
+    width: 85%;
+    background-image: url(https://colorlib.com/preview/theme/wines/images/hero_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+}
+
+div.container>div.welcome>div.w-img::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-color: #222;
+}
+
+div.container>div.welcome>div.w-img>div.text, div.container>div.welcome>div.text {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+div.container>div.welcome>div.w-img>div.text>span,
+ div.container>div.welcome>div.text>span {
+    font-family: 'Cinzel';
+    font-size: 25px;
+}
+
+div.container>div.welcome>div.w-img>div.text>h1, 
+div.container>div.welcome>div.text>h1 {
+    font-family: 'Montserrat';
+    font-size: 75px;
+    font-weight: 900;
+    
+}
+
+div.container>div.our-products {
+    height: 100px;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background-color: #fff;
+   
+}
+
+div.container>div.our-products>h1,
+div.container>div.contact>div.text>h1
+ {
+    font-family: 'cinzel';
+    font-size: 32px;
+    font-weight: 100;
+}
+
+div.container>div.our-products>P {
+    margin: 15px;
+    font-family: 'Roboto';
+    font-size: 18px;
+
+}
+
+div.container>div.our-products>a {
+    color: #B53471;
+    transition: color 0.5s;
+    font-size: 20px;
+    font-family: 'Roboto';
+
+}
+
+div.container>div.our-products>a:hover {
+    color: #470039;
+    transition: all .8s;
+}
+
+div.container>div.products {
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.container>div.products>div.whole-product {
+    width: 300px;
+    height: 400px;
+    margin: 50px 20px;
+    position: relative;
+    background-color: #ecf0f1;
+    z-index: 1;
+}
+
+div.container>div.products>div.whole-product::after {
+    content: ' ';
+    position: absolute;
+    width: 300px;
+    height: 75px;
+    top: 0;
+    background-color: #fff;
+    z-index: -1;
+}
+
+div.container>div.products>div.whole-product>div.product {
+    width: 250px;
+    height: 300px;
+}
+
+div.container>div.products>div.whole-product>div.text {
+    color: #000;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Roboto';
+    font-size: 17px;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+div.container>div.products>div.whole-product>div.text>span {
+    font-family: 'Roboto', ;
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+div.container>div.products>div.whole-product>div.secondbox {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 175px;
+    background-color: #fff;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+}
+
+div.container>div.products>div.whole-product:hover>div.secondbox {
+    display: block;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>a>p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+    color: #222;
+    font-family: 'Roboto';
+}
+
+div.container>div.products>div.whole-product>div.secondbox>p.value {
+    text-align: center;
+    margin: 10px 0;
+    color: #9b59b6;
+    font-size: 23px;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>p.value>span.strike {
+    text-decoration: line-through;
+    text-align: center;
+    color: #ced6e0;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>span {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+    color: #f39c12;
+    position: relative;
+    left: 30%;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>a>div.button {
+    width: 140px;
+    height: 40px;
+    position: relative;
+    background-color: #930077;
+    text-align: center;
+    color: #fff;
+    padding: 10px 10px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color .5s;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>a>div.button:hover {
+    background-color: #60004e;
+}
+
+div.container>div.products>div.whole-product>div.secondbox>a>div.button>span {
+    margin: 0 10px;
+    font-family: 'Roboto';
+}
+
+div.container>div.special {
+    height: 450px;
+    background-color: transparent;
+    align-items: center;
+    position: relative;
+}
+
+div.container>div.special::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: #222;
+}
+
+div.container>div.people {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+div.container>div.people>div.person {
+    width: 300px;
+    margin: 75px 30px;
+}
+
+div.container>div.people>div.person>div.person-image {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+div.container>div.people>div.person>div.person-image>div.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+div.container>div.people>div.person>div.person-image>div.logo::before {
+    content: ' ';
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 4px solid #60004e;
+}
+
+div.container>div.people>div.person>div.person-info {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+div.container>div.people>div.person>div.person-info>span.edit {
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+div.container>div.people>div.person>div.person-info>span.edit2 {
+    line-height: 4.0;
+    color: #B53471;
+    font-size: 14px;
+}
+
+div.container>div.drinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+div.container>div.drinks>div.drink {
+    width: 375px;
+    height: 500px;
+    margin: 50px 15px;
+}
+
+div.container>div.drinks>div.drink>div.logo-drink {
+    width: 375px;
+}
+
+div.container>div.drinks>div.drink>div.info-drink {
+    width: 375px;
+    text-align: left;
+}
+
+div.container>div.drinks>div.drink>div.info-drink>div.title {
+    margin: 10px 0;
+}
+
+div.container>div.drinks>div.drink>div.info-drink>div.title>a {
+    font-family: 'cinzel';
+    font-weight: 500;
+    font-size: 23px;
+    color: #000;
+}
+
+div.container>div.drinks>div.drink>div.info-drink>p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #808080;
+    line-height: 1.5;
+}
+
+div.container>div.drinks>div.drink>div.info-drink>a {
+    font-family: 'Roboto' ;
+    font-size: 14px;
+    color: #000;
+    line-height: 4.0;
+}
+
+div.container>div.drinks>div.drink>div.info-drink>a>span {
+    color: #7f8c8d;
+}
+
+div.container>div.footer {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', ;
+    font-size: 14px;
+    padding: 100px 0;
+}
+
+div.container>div.footer>div.social-icons {
+    width: 220px;
+    height: 100px;
+    margin: 40px 0;
+}
+
+div.container>div.footer>div.social-icons>ul>li {
+    float: left;
+}
+
+div.container>div.footer>div.social-icons>ul>li>a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #930077;
+    position: relative;
+    margin: 10px 2px;
+    transition: all .5s;
+}
+
+div.container>div.footer>div.social-icons>ul>li>a:hover {
+    color: #fff;
+    background-color: #000;
+    top: -8px;
+}
+
+div.container>div.footer>div.social-icons>ul>li>a>span {
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.container>div.footer>p {
+    color: #808080;
+    font-family: 'Roboto', ;
+}
+
+div.container>div.footer>p>span {
+    color: red;
+}
+
+div.container>div.footer>p>a {
+    color: #930077;
+    transition: all .5s;
+}
+
+div.container>div.footer>p>a:hover {
+    color: #470039;
+}
+
+/* The end of index.html :) */
+
+/* About */
+
+div.container>div.infoBox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 70px 0;
+    box-sizing: border-box;
+}
+div.container>div.fl-rew {
+    flex-wrap: wrap-reverse;
+}
+
+div.container>div.infoBox>div.firstimage,
+div.container>div.infoBox>div.secondimage ,
+div.container>div.infoBox>div.firsttext {
+    width: 450px;
+    margin: 10px 75px;
+}
+div.container>div.infoBox>div.firsttext>div.title {
+    width: 400px;
+    font-family: 'cinzel';
+    margin-bottom: 40px;
+}
+
+div.container>div.infoBox>div.firsttext>div.title>h1 {
+    font-weight: 200;
+}
+
+div.container>div.infoBox>div.firsttext>div.context>span,
+ div.container>div.freeBox>div.boxes>div.textbox>div.context>p {
+    display: block;
+    margin-bottom: 30px;
+    font-family: 'Roboto';
+    font-size: 15px;
+    color: gray;
+    line-height: 1.5;
+}
+div.container>div.freeBox {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.container>div.freeBox>div.boxes {
+    width: 350px;
+    height: 200px;
+    display: flex;
+    margin: 25px;
+}
+
+div.container>div.freeBox>div.boxes>div.icons {
+    width: 100px;
+    height: 200px;
+    
+}
+
+div.container>div.freeBox>div.boxes>div.icons>span {
+    display: block;
+    color: #930077;
+    margin: 20px;
+}
+
+div.container>div.freeBox>div.boxes>div.icons>span.reverse {
+    transform: rotateY(180deg)
+}
+
+div.container>div.freeBox>div.boxes>div.textbox {
+    width: 250px;
+    height: 200px;
+}
+
+div.container>div.freeBox>div.boxes>div.textbox>div.title {
+    width: 250px;
+    height: 50px;
+}
+
+div.container>div.freeBox>div.boxes>div.textbox>div.title>h1 {
+    font-family: 'cinzel';
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+}
+
+div.container>div.freeBox>div.boxes>div.textbox>div.context {
+    width: 250px;
+    height: 150px;
+}
+
+/* the end of About */
+
+/* Contact */
+div.container>div.contact{
+    width: 100%;
+    background-color: #fff;
+    color: #808080;
+    padding: 50px 75px;
+    box-sizing: border-box;
+    font-family: "Roboto" ;
+}
+div.container>div.contact>div.text{
+    
+    width: 350px;
+    height: 100px;
+    margin: 50px 0 0 20px ;
+    color: #000;
+}
+div.container>div.contact>div.text>h1{
+   font-family: "Cinzel";
+}
+
+div.container>div.contact>form>div.forms{
+  width: 100%;
+   display: flex; 
+   flex-wrap: wrap; 
+  
+}
+div.container>div.contact>form>div.forms>div.form{
+    
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+ div.container>div.contact>form>div.forms>div.form>label,
+ div.container>div.contact>form>div.forms>div.messagebox>label{
+    width:100%;
+    font-family: "Roboto", ;
+    font-size: 18px;
+   
+}
+
+div.container>div.contact>form>div.forms>div.form>input{
+    height: 45px;
+    width: 100%;
+    border:  1px solid #ced6e0;
+    outline: none;
+   border-radius: 7px;
+  margin: 10px 0;
+    font-size: 20px ;
+}
+div.container>div.contact>form>div.forms>div.form>input:focus{
+    border: 1px solid #e056fd;
+  border-bottom: none;
+}
+div.container>div.contact>form>div.forms>div.messagebox{
+
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+div.container>div.contact>form>div.forms>div.messagebox>label{
+
+    width: 100%;
+}
+div.container>div.contact>form>div.forms>div.messagebox>textarea{
+    resize: vertical;
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    outline: none;
+    border-radius: 7px;
+}
+div.container>div.contact>form>div.forms>div.messagebox>textarea:focus{
+      border: 1px solid #e056fd;
+    border-bottom: none;
+}
+div.container>div.contact>form>div.forms>input{
+    width: 200px;
+    height: 60px;
+    background-color: #930077;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 7px;
+    margin: 20px;
+}
+
+/*  the end of Contact */
+
+/*  wines*/
+div.container>div.cabernet{
+    width: 100%; 
+  background-color: #930077;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+div.container>div.cabernet>div.text{
+    width: 900px;
+    height: 150px;
+    text-align: left;
+    padding: 40px 0;
+    box-sizing: border-box;
+    margin: 0 50px;
+  }
+div.container>div.cabernet>div.text>h1.edit{
+  font-size: 40px;
+  color: #fff;
+  font-weight: 100;
+  font-family: 'Cinzel'
+}
+
+div.container>div.details{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+div.container>div.details>div.image{
+    width: 500px;
+    height: 500px;
+    margin: 40px;
+
+}
+div.container>div.details>div.info{
+    width: 400px;
+    height: 500px;
+    font-family: 'Roboto';
+}
+div.container>div.details>div.info>h1.title{
+    color: #930077;
+    line-height: 2;
+    font-weight: 300;
+    font-size: 30px;
+}
+div.container>div.details>div.info>p.info{
+    color: gray;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5;
+}
+div.container>div.details>div.info>form>div.count{
+   margin: 25px 0;
+   width: 170px;
+   display: flex;
+
+}
+
+div.container>div.details>div.info>form>div.count>#minus
+{
+    width: 30px; 
+    height: 32px;
+    border: 1px solid #930077;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: background-color 0.5s;
+}
+div.container>div.details>div.info>form>div.count>#minus:hover{
+    background-color:  #930077;
+    color: #fff;
+   cursor: pointer;
+  }
+
+div.container>div.details>div.info>form>div.count>#textbox{
+    width: 100px; 
+    height: 30px;
+    border:  1px solid #ced6e0;
+    text-align: center;
+
+}
+div.container>div.details>div.info>form>div.count>#textbox:focus{
+ 
+   outline: 3px groove #fff;
+   z-index: 1;
+ 
+}
+div.container>div.details>div.info>form>div.count>#plus{
+    width: 30px; 
+    height: 32px;
+    border: 1px solid #930077;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.5s;
+}
+div.container>div.details>div.info>form>div.count>#plus:hover{
+  background-color:  #930077;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+div.container>div.details>div.info>form>input{
+    width: 120px; 
+    height: 50px;
+   background-color: #930077;
+   color: #fff;
+   border-radius: 5px;
+   margin: 15px 0;
+   transition: background-color 0.5s;
+
+}
+div.container>div.details>div.info>form>input:hover{
+   
+   background-color: #60004e;
+  
+
+}
+div.container>div.purple{
+    background-color: #930077;
+}
+
+
+
+
+
+
+
+
